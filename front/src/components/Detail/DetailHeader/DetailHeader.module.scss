@@ -1,0 +1,80 @@
+.DetailHeader {
+  width: 100%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid white;
+
+  .Title {
+    display: flex;
+    justify-content: space-around;
+
+    .CoverImage {
+      border-radius: 50%;
+      background-size: cover;
+      min-width: 200px;
+      max-width: 200px;
+      width: 30%;
+      height: 200px;
+      display: inline-block;
+      border: 1px solid #AAA;
+      margin-right: 15px;
+    }
+
+    .Info {
+      width: 70%;
+      color: white;
+
+      h2 {
+        font-size: 2em;
+        text-transform: uppercase;
+      }
+
+      .whatsApp {
+        float: right;
+        font-size: 18px;
+
+        img {
+          float: left;
+          width: 26px;
+          margin-right: 10px;
+          border-radius: 8px;
+        }
+      }
+
+      .BodyInfo {
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+
+        > .BodyInfoItem {
+          border-left: solid 1px white;
+          box-shadow: #AAA;
+          padding: 0 10px;
+          margin-bottom: 5px;
+          font-size: 1.1em;
+        }
+      }
+
+      .Description {
+        font-size: 1.25em;
+        padding: 10px;
+        font-style: italic;
+      }
+    }
+
+    @media (max-width: 660px) {
+      flex-flow: column;
+      align-items: center;
+
+      .CoverImage {
+        margin-right: 0;
+        margin-bottom: 15px;
+      }
+
+      .Info {
+        width: 100%;
+      }
+    }
+  }
+}

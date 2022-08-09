@@ -1,0 +1,29 @@
+@import '../styles/colors.scss';
+
+.Button {
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1em;
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.primary {
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+
+  &:hover {
+    background-color: $col-black;
+    border-color: white;
+    color: white;
+  }
+}
+
+.secondary {
+  background-color: #167eff;
+  border: 1px solid #167eff;
+  color: white;
+}

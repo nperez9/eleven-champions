@@ -1,0 +1,26 @@
+@import '../../../library/styles/colors.scss';
+
+.Logo {
+  font-size: 1.25em;
+}
+
+.Header {
+  box-sizing: border-box;
+  width: 100%;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 18px;
+  border-bottom: 1px solid #FAFAFA;
+  margin-bottom: 14px;
+
+  .MenuButton {
+    cursor: pointer;
+  }
+
+  h1 {
+    color: $col-gold-3;
+  }
+}
+

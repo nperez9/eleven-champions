@@ -1,0 +1,36 @@
+.GeishaItem {
+  height: 350px;
+  width: 250px;
+  text-align: center;
+  display: inline-block;
+  margin: 12px;
+  position: relative;
+  background-size: cover;
+  border-radius: 10px;
+  cursor: pointer;
+
+  .Info {
+    position: absolute;
+    height: 25%;
+    width: 100%;
+    background-color: rgba($color: #000000, $alpha: 0.4);
+    bottom: 0;
+    color: #FFFFFF;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+    > span {
+      display: block;
+    }
+
+    .Name {
+      font-size: 1.25em;
+      margin-top: 10px;
+      font-weight: 600;
+    }
+
+    .Place {
+      margin-top: 15px;
+    }
+  }
+}

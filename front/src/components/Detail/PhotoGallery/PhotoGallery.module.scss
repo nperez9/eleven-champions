@@ -1,0 +1,13 @@
+.PhotoGallery {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: flex-end;
+  flex-direction: row;
+
+  > img {
+    max-width: 100%;
+    margin-bottom: 15px;
+  }
+}
