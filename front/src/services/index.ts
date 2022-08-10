@@ -1,1 +1,1 @@
-export * from './GeishaService';
+export * from './UserService';

@@ -1,8 +1,5 @@
-import { GeishaService } from '../../services/GeishaService';
-
-export const getGeishaList = (filters: any) => {
+export const login = (email: string, password: string) => {
   return async (dispatch: any) => {
-    const geishas = await GeishaService.getList();
-    console.info(geishas)
+
   }
 }
