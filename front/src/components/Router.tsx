@@ -1,13 +1,14 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 
-import Login from './Login/Login';
+import { Login } from '../pages';
 import AdminHome from './Admin/Home';
 import { AdminTemplate, Error } from './Core';
 
 const Main = () => {
   return (
     <Routes>
+      <Route path='/' element={<Login />} />
       <Route path='/login' element={<Login />} />
       <Route
         path='/admin'
