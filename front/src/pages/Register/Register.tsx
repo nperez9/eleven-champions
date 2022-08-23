@@ -7,11 +7,11 @@ import styles from './Login.module.scss';
 import { IAppState, IAuthState } from '../../store';
 import { loginAction } from '../../store/action-creators/auth-actions';
 
-interface LoginProps {
+interface RegisterProps {
   message?: string;
 }
 
-export const Login: React.FC<LoginProps> = ({ message = '' }) => {
+export const Register: React.FC<RegisterProps> = ({ message = '' }) => {
   const { isLogged } = useSelector<IAppState, IAuthState>(
     (state) => state.auth
   );

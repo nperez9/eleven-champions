@@ -1,5 +1,5 @@
 export const config = {
-  title: 'Elegidas.com',
+  title: 'Eleven Champions',
 };
 
 export default config;

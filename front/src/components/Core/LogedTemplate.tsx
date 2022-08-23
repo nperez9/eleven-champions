@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import { IAppState, IAuthState } from '../../store';
 import AdminHeader from './AdminHeader/AdminHeader';
 
-const AdminTemplate = ({ children }: { children?: React.ReactChild }) => {
+const LogedTemplate = ({ children }: { children?: React.ReactChild }) => {
   const auth = useSelector<IAppState, IAuthState>((state) => state.auth);
   const navigate = useNavigate();
 
@@ -22,4 +22,4 @@ const AdminTemplate = ({ children }: { children?: React.ReactChild }) => {
   );
 };
 
-export default AdminTemplate;
+export default LogedTemplate;
