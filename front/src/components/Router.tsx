@@ -10,7 +10,7 @@ const Main = () => {
     <Routes>
       <Route path='/' element={<Login />} />
       <Route path='/login' element={<Login />} />
-      <PrivateRoute path='/home' Component={Home} />
+      {/* <PrivateRoute path='/home' Component={Home} /> */}
       <Route
         path='*'
         element={<Error code={404} title='Pagina no encontrada' />}
